@@ -1,10 +1,12 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto" sans-serif;
   font-size: 16px;
 }
-
+body {
+  line-height: 1;
+}
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -26,6 +28,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -41,11 +44,13 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 1;
 }
 
 header .content {
   display: flex;
   align-items: center;
+  font-family: Roboto;
   padding: 1.875rem;
 }
 
@@ -66,6 +71,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  font-family: Roboto;
 }
 
 header .icon {
@@ -113,6 +119,10 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -124,6 +134,8 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-top: 10.625rem;
+  margin-left: 10%;
 }
 
 #sign-up-cta .content {
@@ -215,7 +227,9 @@ header .mobile {
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
-
+#features-section .content {
+  margin: 2.25rem 0;
+}
 .feature {
   flex: 1;
   padding: 2rem;
@@ -234,13 +248,16 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  font-family: Roboto;
+  font-weight: bold;
+  line-height: 1.2;
 }
-
 .feature h3 {
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  font-family: Roboto;
 }
 
 @media only screen and (max-width: 890px) {
@@ -278,6 +295,7 @@ header .mobile {
 #filters-section .content {
   padding: 0 .625rem;
   margin-bottom: 5rem;
+  font-family: Roboto;
 }
 
 #filters-section .content h2 {
@@ -296,6 +314,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -334,11 +353,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -352,11 +371,11 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
@@ -379,13 +398,15 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-family: Roboto;
+  font-weight: normal;
 }
 
 footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
