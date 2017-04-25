@@ -134,8 +134,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-top: 10.625rem;
+  top: 171px;
   margin-left: 10%;
+  position: relative;
 }
 
 #sign-up-cta .content {
@@ -172,6 +173,7 @@ header .mobile {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
 }
+
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
@@ -366,7 +368,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
@@ -380,7 +382,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
